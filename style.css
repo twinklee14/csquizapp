@@ -1,0 +1,95 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#question, .option {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  background: darkblue;
+  background-image: url(https://t3.ftcdn.net/jpg/01/25/63/38/360_F_125633884_T5a0AOzmYWJkULpTw3L4aB1T8tUQL17f.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#quiz-box {
+  height: auto;
+  background: #2393cb;
+  padding: 50px 60px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(67, 53, 53, 0.1);
+  width: 400px;
+  text-align: center;
+  align-items: center;
+}
+#start-btn{
+  margin:20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+h2 {
+  color: #281515;
+}
+#start-btn:hover{
+  background:#ffffff;
+  color:#d62828;
+
+}
+
+.option {
+
+  background: #e0e0e4;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.option:active {
+  transform: scale(0.96);
+  transition: transform 0.1s;
+}
+
+
+.option:hover {
+  background: #d70b0b;
+  color: rgb(255, 255, 255);
+}
+
+#next-btn {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 10px;
+  background: #101010;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin: 20px auto 0 auto;
+  font-size:larger;
+}
+#next-btn:hover{
+  color:black;
+  background:white;
+
+}
+#difficulty {
+  margin: 10px 0 20px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#timer {
+  font-weight: bold;
+  color: #2a4b31;
+  margin-bottom: 10px;
+}
